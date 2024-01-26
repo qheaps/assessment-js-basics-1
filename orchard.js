@@ -83,7 +83,7 @@ console.log(totalAcres, `total acres`)
 
 // CODE HERE
 // calculates the average number of acres picked per day across all apple types
-let averageDailyAcres = totalAcres / 21
+let averageDailyAcres = totalAcres / 7
 console.log(averageDailyAcres, `average daily acres`)
 
 
