@@ -243,9 +243,6 @@ for (let i = 0; i <= pinkTons.length - 1; i++) {
 let fujiProfit = fujiPounds * fujiPrice
 let galaProfit = galaPounds * galaPrice
 let pinkProfit = pinkPounds * pinkPrice
-console.log(fujiProfit)
-console.log(galaProfit)
-console.log(pinkProfit)
 // PROBLEM 7
 
 /*
@@ -257,6 +254,6 @@ console.log(pinkProfit)
 */
 
 // CODE HERE
-
+// Calculates the overall profit from all apple types
 let totalProfit = fujiProfit + galaProfit + pinkProfit
 console.log(`Total profits were $ ${totalProfit}`)
