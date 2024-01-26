@@ -82,6 +82,7 @@ for (let i = 0; i <= pinkAcres.length - 1; i++) {
 */
 
 // CODE HERE
+// calculates the average number of acres picked per day across all apple types
 let averageDailyAcres = totalAcres / 21
 // console.log(averageDailyAcres)
 
