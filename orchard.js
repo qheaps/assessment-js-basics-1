@@ -51,7 +51,7 @@ const pinkPrice = .55
 
 // CODE HERE
 totalAcres = 0
-
+// Calculates the total number of acres picked per week across all apple types
 // for loop for fuji acres
 for (let i = 0; i <= fujiAcres.length - 1; i++) {
     totalAcres = totalAcres + fujiAcres[i]
@@ -64,7 +64,7 @@ for (let i = 0; i <= galaAcres.length - 1; i++) {
 for (let i = 0; i <= pinkAcres.length - 1; i++) {
     totalAcres = totalAcres + pinkAcres[i]
 }
-// console.log(totalAcres)
+console.log(totalAcres, `total acres`)
 
 
 
@@ -84,7 +84,7 @@ for (let i = 0; i <= pinkAcres.length - 1; i++) {
 // CODE HERE
 // calculates the average number of acres picked per day across all apple types
 let averageDailyAcres = totalAcres / 21
-// console.log(averageDailyAcres)
+console.log(averageDailyAcres, `average daily acres`)
 
 
 
@@ -122,11 +122,12 @@ let acresLeft = 174
 let days = 0
 
 // CODE HERE
+// Calculates how many days(in a whole number) it would take to pick 174 acres of apples at the average daily rate
 while (acresLeft >= 0) {
-    acresLeft = acresLeft - 21
+    acresLeft = acresLeft - averageDailyAcres
     days++
 }
-// console.log(days)
+console.log(days, `days`)
 
 
 // PROBLEM 4
@@ -206,17 +207,17 @@ let pinkPounds = 0
 for (let i = 0; i <= fujiTons.length - 1; i++) {
     fujiPounds = fujiPounds + (fujiTons[i] * 2000)
 }
-// console.log(fujiPounds)
+console.log(fujiPounds, `fuji pounds`)
 
 for (let i = 0; i <= galaTons.length - 1; i++) {
     galaPounds = galaPounds + (galaTons[i] * 2000)
 }
-// console.log(galaPounds)
+console.log(galaPounds, `gala pounds`)
 
 for (let i = 0; i <= pinkTons.length - 1; i++) {
     pinkPounds = pinkPounds + (pinkTons[i] * 2000)
 }
-// console.log(pinkPounds)
+console.log(pinkPounds, `pink pounds`)
 
 
 
@@ -242,8 +243,11 @@ for (let i = 0; i <= pinkTons.length - 1; i++) {
 // CODE HERE
 // Calculates the profits for each apple type
 let fujiProfit = fujiPounds * fujiPrice
+console.log(`total fuji profit: $ ${fujiProfit}.`)
 let galaProfit = galaPounds * galaPrice
+console.log(`total gala profit: $ ${galaProfit}.`)
 let pinkProfit = pinkPounds * pinkPrice
+console.log(`total pink profit: $ ${pinkProfit}.`)
 // PROBLEM 7
 
 /*
